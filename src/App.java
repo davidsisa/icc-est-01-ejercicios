@@ -31,6 +31,7 @@ public class App {
         int multiplicacion = dataStructuresPrep.multiplyAlgorithm(10, 5);
         int division = dataStructuresPrep.divideWAlgorithm(20, 2);
         boolean numero = dataStructuresPrep.isPerfectNumber(6);
+        int factorial = dataStructuresPrep.getFactorial(6);
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -54,9 +55,13 @@ public class App {
          * EJERCICIO SISA: DIVISION
          */
         System.out.println("El resultado de divideAlgorithm es: " + division);
-                /*
+         /*
          * EJERCICIO SISA: DIVISION
          */
         System.out.println("El resultado de isPerfectNumber es: " + numero);
+        /*
+         * EJERCICIO SISA: FACTORIAL
+         */
+        System.out.println("El resultado de getFactorial es: " + factorial);
     }
 }

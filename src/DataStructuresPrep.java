@@ -101,7 +101,12 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+    //throw new UnsupportedOperationException("Not yet implemented");
+    int factorial = 1;
+    for (int i = 1; i < number+1; i++) {
+        factorial = i * factorial;
+    }
+    return factorial;
     }
 
     /**
