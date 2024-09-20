@@ -32,6 +32,7 @@ public class App {
         int division = dataStructuresPrep.divideWAlgorithm(20, 2);
         boolean numero = dataStructuresPrep.isPerfectNumber(6);
         int factorial = dataStructuresPrep.getFactorial(6);
+        int primo = dataStructuresPrep.isPrime(3);
         /*
          * Imprimir el resultado de la operación.
          * 

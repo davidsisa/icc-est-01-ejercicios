@@ -140,7 +140,16 @@ public class DataStructuresPrep {
      *         Ejemplo: isPrime(5) retorna true.
      */
     public boolean isPrime(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+    //throw new UnsupportedOperationException("Not yet implemented");
+    int contador = 0;
+    int residuo = 0; 
+        for (int i = 0; i <= number; i++) {
+            residuo = number % i;
+            if (residuo == 0) {
+                contador++;
+            }
+        }
+        return contador== 2;
     }
 
     /**
