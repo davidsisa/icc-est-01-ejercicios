@@ -28,7 +28,9 @@ public class App {
          * realizar operaciones básicas de manera creativa en programación.
          */
         int resultado = dataStructuresPrep.subtractAlgorithm(15, 5);
-
+        int multiplicacion = dataStructuresPrep.multiplyAlgorithm(10, 5);
+        int division = dataStructuresPrep.divideWAlgorithm(20, 2);
+        boolean numero = dataStructuresPrep.isPerfectNumber(6);
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -44,6 +46,17 @@ public class App {
          * parte de mensajes de salida o en lógicas de decisión más complejas.
          */
         System.out.println("El resultado de subtractAlgorithm  es: " + resultado);
-
+        /*
+         * EJERCICIO SISA: MULTIPLICACION
+         */
+        System.out.println("El resultado de multiplyAlgorithm es: " + multiplicacion);
+        /*
+         * EJERCICIO SISA: DIVISION
+         */
+        System.out.println("El resultado de divideAlgorithm es: " + division);
+                /*
+         * EJERCICIO SISA: DIVISION
+         */
+        System.out.println("El resultado de isPerfectNumber es: " + numero);
     }
 }

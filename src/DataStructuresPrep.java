@@ -26,7 +26,12 @@ public class DataStructuresPrep {
      *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
      */
     public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+    //throw new UnsupportedOperationException("Not yet implemented");
+    int contador = 0;
+        while( a > (b+contador) ) {
+            contador++;
+        }
+        return contador;
     }
 
     /**
@@ -38,8 +43,14 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+    //throw new UnsupportedOperationException("Not yet implemented");
+    int contador = 0;
+    int resultado = 0; 
+        while (contador != b) {
+            contador++;
+            resultado = resultado + a;
+        }
+        return resultado;
     }
 
     /**
@@ -51,8 +62,14 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+    //throw new UnsupportedOperationException("Not yet implemented");
+    int contador = 0;
+    int cociente = 0;
+        while (dividend != 0) {
+            dividend = dividend - divisor;
+            contador ++;
+        }
+        return contador;
     }
 
     /**
@@ -64,7 +81,16 @@ public class DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+    //throw new UnsupportedOperationException("Not yet implemented");
+    int cociente = 0;
+    int suma = 0;
+        for (int i = 1; i < number; i++) {
+            cociente = number % i;
+            if (cociente == 0) {
+                suma = suma  + i;            
+            }
+        }
+        return suma == number;
     }
 
     /**
