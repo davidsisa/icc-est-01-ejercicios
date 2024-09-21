@@ -32,9 +32,11 @@ public class App {
         int division = dataStructuresPrep.divideWAlgorithm(20, 2);
         boolean numero = dataStructuresPrep.isPerfectNumber(6);
         int factorial = dataStructuresPrep.getFactorial(6);
-        int primo = dataStructuresPrep.isPrime(3);
+        boolean primos = dataStructuresPrep.isPrime(5);
+        int exponente = dataStructuresPrep.powerAlgorithm(8, 3);
+
         /*
-         * Imprimir el resultado de la operación.
+         * Imprimir el resultado de la operación.   
          * 
          * Finalmente, imprimimos el resultado de la operación a la consola. Esto nos
          * permite
@@ -64,5 +66,13 @@ public class App {
          * EJERCICIO SISA: FACTORIAL
          */
         System.out.println("El resultado de getFactorial es: " + factorial);
+                /*
+         * EJERCICIO SISA: PRIMOS
+         */
+        System.out.println("El resultado de getPrimos es: " + primos);
+                        /*
+         * EJERCICIO SISA: EXPONENTE
+         */
+        System.out.println("El resultado de powerAlgorith es: " + exponente);
     }
 }

@@ -129,7 +129,12 @@ public class DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+    //throw new UnsupportedOperationException("Not yet implemented");
+        int cont = 1;
+        for (int i = 1; i <= exponent; i++ ){
+            cont=cont*base;
+        }
+        return cont;
     }
 
     /**
@@ -143,13 +148,17 @@ public class DataStructuresPrep {
     //throw new UnsupportedOperationException("Not yet implemented");
     int contador = 0;
     int residuo = 0; 
-        for (int i = 0; i <= number; i++) {
+        for (int i = 1; i <= number; i++) {
             residuo = number % i;
             if (residuo == 0) {
                 contador++;
             }
         }
-        return contador== 2;
+        if (contador == 2) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -161,5 +170,6 @@ public class DataStructuresPrep {
      */
     public int countDigits(int number) {
         throw new UnsupportedOperationException("Not yet implemented");
+        
     }
 }
